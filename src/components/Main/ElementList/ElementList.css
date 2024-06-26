@@ -1,0 +1,34 @@
+.list-wrapper {
+  display: grid;
+  padding-inline: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 15px), 1fr));
+  place-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .list-wrapper {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(calc(100% / 4) - 15px), 1fr)
+    );
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .list-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 15px), 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 15px), 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .list-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

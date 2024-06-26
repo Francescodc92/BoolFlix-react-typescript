@@ -1,0 +1,77 @@
+/*---------------
+Categories
+----------------*/
+.header .left .input-wrapper {
+  position: relative;
+}
+
+.header .left .input-wrapper .category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background: #000;
+  padding-block: 0.2rem;
+  padding-inline: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.header .left .input-wrapper .categories-list {
+  position: absolute;
+  min-width: 250px;
+  height: 250px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 1px solid red;
+  top: 1.8rem;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .left .input-wrapper .categories-list.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .left .input-wrapper .categories-list .movie,
+.header .left .input-wrapper .categories-list .series {
+  width: 50%;
+}
+
+.header .left .input-wrapper .categories-list .movie h4,
+.header .left .input-wrapper .categories-list .series h4 {
+  color: #cc0a21;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.header .left .input-wrapper .categories-list .genre {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-block: 1rem;
+}
+
+.header .left .input-wrapper .categories-list .genre button {
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.header .left .input-wrapper .categories-list .genre button:hover {
+  color: #cc0a21;
+}

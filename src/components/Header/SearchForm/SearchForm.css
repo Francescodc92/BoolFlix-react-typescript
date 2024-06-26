@@ -1,0 +1,61 @@
+/*----------------
+Header Right
+----------------*/
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+form .icon {
+  color: #8a8787;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+form label {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  width: 0px;
+  padding-left: 23px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #8a8787;
+  padding-block: 0.3rem;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #8a8787;
+  font-size: 1rem;
+}
+form input:focus,
+form input.on-use {
+  width: 100%;
+}
+
+form .search-btn {
+  padding-inline: 0.8rem;
+  padding-block: 0.4rem;
+  background-color: #cc0a21;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 300ms ease-in-out;
+}
+
+form .search-btn:hover {
+  background-color: #9b1828;
+}
